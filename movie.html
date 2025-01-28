@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movies</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Search Movies</h1>
+        <form id="searchForm" class="mb-4" onsubmit="searchMovies(event)">
+            <div class="input-group">
+                <input type="text" id="query" class="form-control" placeholder="Enter movie name" required>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+        <button id="popularMoviesBtn" class="btn btn-secondary mb-4" onclick="fetchPopularMovies()">Show Popular Movies</button>
+        <div id="results" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
